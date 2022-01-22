@@ -6,9 +6,10 @@ namespace DasBlog.Web.TagHelpers.RichEdit
 	public class TinyMceBuilder : IRichEditBuilder
 	{
 		private readonly IDasBlogSettings dasBlogSettings;
+		//<script language=""javascript"" type=""text/javascript"" src=""{0}/js/tinymce/plugins/code/plugin.min.js""></script>
 		private const string TINY_MCE_SERVICE_URL = "https://cloud.tinymce.com/stable/tinymce.min.js";
 		private const string INIT_SCRIPT_TEMPLATE = @"
-		<script language=""javascript"" type=""text/javascript"" src=""{0}/js/tinymce/plugins/code/plugin.min.js""></script>
+		<script language=""javascript"" type=""text/javascript"" src=""https://cdn.tiny.cloud/1/85s4efltdrppwjoi92ty8mbojlnvjkyja741o46mtae1lf5o/tinymce/5/tinymce.min.js""></script>
 		<script>
 		tinymce.init({{
 			selector: '#{1}'
