@@ -14,5 +14,6 @@ namespace DasBlog.Web.UI
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 			WebHost.CreateDefaultBuilder(args)
 				.UseStartup<Startup>();
+				//.UseIIS();
 	}
 }
